@@ -2,6 +2,9 @@ import Chai from "./Chai"
 
 function App() {
 
+  // +++++inserting varibale inside the html ex: username using {} ++++ /////
+  const username = "shubham"
+
   return (
   //  <h1> react with vite</h1>
   //<Chai />
@@ -14,8 +17,11 @@ function App() {
   // <Chai />
   // </div>
 
+  //{username} --> this is final evaluated java script expressing that means
+  // we can not write somethings like ternary operators or if elese inside the html final value will e given 
+  // why we cannot write there is example of another user inside main.jsx
   <> 
-  <h1> react with vite</h1>
+  <h1> react with vite for {username}</h1>
   <Chai />
   </>
   )
