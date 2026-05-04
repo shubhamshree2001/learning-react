@@ -48,7 +48,7 @@ function App() {
   //now we need a function to copy the text to clipoard
   // for that we should connect the button with pasword text 
   // here we have useref hook which takes the reference of other component 
-  const passwordRef = useRef(null) // we dont hae reference currently
+  const passwordRef = useRef(null) // we dont have reference currently
 
   const copyPasswordToClipboard = useCallback(()=> {
     // here we are using react which makes js to exectute and have window
