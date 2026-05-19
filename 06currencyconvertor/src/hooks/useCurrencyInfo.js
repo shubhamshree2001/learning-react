@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 function useCurrencyInfo(currency){
     const [data, setData] = useState({})
     useEffect(() => {
+        //https://api.frankfurter.dev/v1/latest?from=USD
         fetch(`https://cors-anywhere.herokuapp.com/https://api.frankfurter.app/latest?from=${currency}`)
         .then((res) => res.json())
         .then((res) => setData(res[rates]))
